@@ -9,7 +9,10 @@
         <header>
             <h1>Your Daily Quiz</h1>
         </header>
-        <main> <div class="learning-path"> >{{ questions }} </div> <a href="{{ url_for('main.dashboard') }}">Back to Dashboard</a> </main>
+        <main>
+            <pre>{{ questions }}</pre>
+            <a href="{{ url_for('main.dashboard') }}">Back to Dashboard</a>
+        </main>
     </div>
 </body>
 </html>
