@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome, {{ user.username }}!</h1>
+            <nav>
+                <ul>
+                    <!-- <li><a href="{{ url_for('main.quiz') }}">Daily Tech Quiz</a></li>
+                    <li><a href="{{ url_for('main.learning_nuggets') }}">Daily Learning Nuggets</a></li>
+                    <li><a href="{{ url_for('main.personalized_learning') }}">Personalized Learning Path</a></li> -->
+                    <li><a href="{{ url_for('auth.logout') }}">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Dashboard</h2>
+            <p>Choose an option to start your learning journey:</p>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Tech Quiz & Challenges</h3>
+                    <p>Engage with daily quizzes on various tech topics to enhance your skills.</p>
+                    <a href="{{ url_for('main.quiz') }}">Start Quiz</a>
+                </div>
+                <div class="card">
+                    <h3>Daily Learning Nuggets</h3>
+                    <p>Consume bite-sized learning content on the latest tech trends.</p>
+                    <a href="{{ url_for('main.learning_nuggets') }}">Learn Now</a>
+                </div>
+                <div class="card">
+                    <h3>Personalized Learning Path</h3>
+                    <p>Get personalized recommendations for your learning journey.</p>
+                    <a href="{{ url_for('main.personalized_learning') }}">Get Recommendations</a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 Micro-Learning App. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

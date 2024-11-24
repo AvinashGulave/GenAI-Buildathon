@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <title>Recommendation Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Get Your Learning Path Recommendation</h1>
+        </header>
+        <main>
+            <form method="post">
+                <div class="form-group">
+                    <label for="user_input">Enter your interest:</label>
+                    <input type="text" name="user_input" required>
+                </div>
+                <button type="submit">Get Recommendation</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

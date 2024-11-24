@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+    <title>Learning Nugget</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Daily Learning Nugget</h1>
+        </header>
+        <main>
+            <div class="learning-path"> >{{ nugget }} </div>
+            <a href="{{ url_for('main.dashboard') }}">Back to Dashboard</a>
+        </main>
+    </div>
+</body>
+</html>

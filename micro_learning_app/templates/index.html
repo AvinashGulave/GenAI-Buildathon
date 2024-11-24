@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+    <title>Micro-Learning App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Micro-Learning Upskilling App</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('auth.login') }}">Login</a></li>
+                    <li><a href="{{ url_for('auth.register') }}">Register</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Welcome!</h2>
+            <p>Start your learning journey here!</p>
+        </main>
+        <footer>
+            <p>&copy; 2024 Micro-Learning App. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <title>Personalized Learning Path</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Get Your Personalized Learning Path</h1>
+        </header>
+        <main>
+            <form method="post">
+                <div class="form-group">
+                    <label for="interests">Select your interests:</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" name="interests" value="Web Development"> Web Development<br>
+                        <input type="checkbox" name="interests" value="AI"> AI<br>
+                        <input type="checkbox" name="interests" value="Cloud Computing"> Cloud Computing<br>
+                        <input type="checkbox" name="interests" value="Data Science"> Data Science<br>
+                        <input type="checkbox" name="interests" value="Cybersecurity"> Cybersecurity<br>
+                    </div>
+                </div>
+                <button type="submit">Get Learning Path</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

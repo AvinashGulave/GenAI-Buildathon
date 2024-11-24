@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+    <title>Recommendation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Personalized Learning Path Recommendation</h1>
+        </header>
+        <main>
+            <div class="learning-path"> >{{ recommendation }} </div>
+           
+            <a href="{{ url_for('main.home') }}">Back to Home</a>
+        </main>
+    </div>
+</body>
+</html>
